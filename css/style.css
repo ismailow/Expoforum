@@ -109,6 +109,11 @@ h1, h2, h3{
     color: #fff;
     text-decoration: none;
     font-size: 1.4rem;
+    transition: .2s;
+}
+
+.info__link:hover{
+    text-decoration: underline;
 }
 
 .info__item.blue{
@@ -195,3 +200,47 @@ h1, h2, h3{
 .language:hover{
     border-bottom: 2px solid #fff;
 }
+
+
+
+/* !===Information=== */
+.information{
+    background-color: #2378FC;
+}
+
+.information__inner{
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.information__title{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.information__list{
+    list-style: none;
+}
+
+.information__link{
+    display: block;
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.information__link:hover{
+    color: #FFC41E;
+    text-decoration: underline;
