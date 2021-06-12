@@ -212,6 +212,7 @@ h1, h2, h3{
     padding: 75px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .information__col{
@@ -244,3 +245,77 @@ h1, h2, h3{
 .information__link:hover{
     color: #FFC41E;
     text-decoration: underline;
+}
+
+
+
+/* !===Events=== */
+.events{
+    background: #FFC41E;
+}
+
+.events__inner{
+    padding: 75px 0;
+    color: #2E373B;    
+}
+
+.events__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events__title{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.events__link{
+    color: #2E373B;
+    font-weight: 500;
+    font-size: 2.1rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.events__link:hover{
+    text-decoration: underline;    
+}
+
+.events__block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.events__item{
+    width: 100%;
+    max-width: 350px;
+    margin-top: 40px;
+}
+
+.events__image{
+    width: 100%;
+}
+
+.events__img{
+    width: 100%;
+}
+
+.events__date{
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.events__name{
+    color: #F6404F;
+    font-size: 2.1rem;
+    margin-top: 10px;
+}
+
+.events__about{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
