@@ -135,6 +135,14 @@ h1, h2, h3{
 
 
 /* !===Header=== */
+.header{
+    border-bottom: 1px solid #fff;
+}
+
+.header__logo{
+    margin-left: 5%;
+}
+
 .header__inner{
     display: flex;
     flex-direction: row;
@@ -142,23 +150,31 @@ h1, h2, h3{
     color: #fff;
     justify-content: space-around;
     padding: 33px 0;
-    border-bottom: 1px solid #fff;
 }
 
 /* !===Nav=== */
 .nav{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    max-width: 1051px;
 }
 
 .menu{
     display: flex;
-    margin-right: 315px;
+    /* margin-right: 315px; */
+    margin-left: 50px;
 }
 
 .menu__item{
     list-style: none;
-    margin-left: 37px;
+    margin-left: 30px;
+}
+
+.menu__item:first-child{
+    margin-left: 0;
 }
 
 .menu__link{
@@ -174,6 +190,7 @@ h1, h2, h3{
 
 .nav__block{
     display: flex;
+    justify-content: space-between;
 }
 
 .search__icon{
@@ -546,4 +563,12 @@ h1, h2, h3{
     width: 18px;
     height: 18px;
     fill: #fff;
+}
+
+
+
+@media (max-width: 1400px) {
+    .search__icon{
+        margin-right: 30px;
+    }
 }
