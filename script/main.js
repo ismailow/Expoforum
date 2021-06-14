@@ -6,6 +6,8 @@ button.onclick = function(){
 
     if(nav.classList.contains('active')){
         document.body.classList.add('scroll-hidden');
+    } else {
+        document.body.classList.remove('scroll-hidden')
     };
 };
 
