@@ -33,6 +33,39 @@ h1, h2, h3{
     margin: 0 auto;
 }
 
+.burger-button{
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border: none;
+    position: relative;
+    border-radius: 3px;
+    display: none;
+    margin-right: 30px;
+}
+
+.burger-button::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.burger-button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
 /* !===Intro=== */
 .intro{
     background: url('../img/intro.jpg') no-repeat center center / cover;
@@ -570,5 +603,125 @@ h1, h2, h3{
 @media (max-width: 1400px) {
     .search__icon{
         margin-right: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .intro__content{
+        flex-direction: column;
+    }
+
+    .intro-info__block{
+        margin-top: 70px;
+    }
+
+    .intro__text-block{
+        margin-top: 50px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .information__inner{
+        justify-content: flex-end;
+    }
+
+    .information__col{
+        width: 45%;
+    }
+
+    .events__block{
+        justify-content: space-around;
+    }
+
+    .events__item{
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 1040px){
+    .intro-info__block{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__inner{
+        justify-content: space-between;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .burger-button{
+        display: block;
+    }
+
+    .news__inner{
+        justify-content: center;
+    }
+
+    .news__block{
+        margin-top: 40px;
+    }
+
+    .news__image{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 500px){
+    .intro__title{
+        font-size: 5rem;
+    }
+
+    .intro__text{
+        font-size: 2rem;
+    }
+
+    .information__inner{
+        justify-content: center;
+    }
+
+    .information__col{
+        width: 100%;
+    }
+
+    .events__block{
+        margin-top: 20px;
+    }
+
+    .events__item{
+        max-width: 100%;
+    }
+
+    .events__title{
+        font-size: 2.3rem;
+    }
+
+    .events__link{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .news__item{
+        flex-direction: column;
+    }
+
+    .news__info{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .intro__title{
+        font-size: 4.5rem;
     }
 }
